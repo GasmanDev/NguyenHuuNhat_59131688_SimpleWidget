@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên của bạn:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nhập tên bạn vào đây" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày sinh:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edtNgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nhập ngày sinh vào đây" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giới tính"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rdgGioiTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbNam"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbNu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sở thích của bạn"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbXemPhim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xem phim" />
+
+            <CheckBox
+                android:id="@+id/cbNgheNhac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nghe nhạc" />
+
+            <CheckBox
+                android:id="@+id/cbDiCafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đi cafe với bạn bè" />
+
+            <CheckBox
+                android:id="@+id/cbONha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ở nhà một mình" />
+
+            <CheckBox
+                android:id="@+id/cbVaoBep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vào bếp nấu ăn" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sở thích khác"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtSoThich"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nhập sở thích khác vào đây" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnXacNhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xác nhận"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
